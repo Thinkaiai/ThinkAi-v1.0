@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Machine-Learning-model</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/conversation.png" rel="icon">
+    <link href="assets/img/conversation.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+  
+   
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    
+
+  
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        
+        <img src="assets/img/logos.png" alt="">
+        <h1>ThinkAi</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a href="index.html">Courses</a></li> -->
+          <li class="dropdown"><a href="index.html"><span style="font-size: larger; font-weight: 700;">Courses</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <!-- <li><a href="search-result.html">Search Result</a></li> -->
+              <li><a href="#">Artifical Intellence</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Web Developer</a></li>
+              <li><a href="#">Full Stack developer</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" style="font-size: larger; font-weight: 700;">Blog</a></li>
+          
+          <li><a href="#contact" style="font-size: larger; font-weight: 700;">Contact</a></li>
+          
+        </ul>
+        
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main class="main" id="main">
+    <section class="single-post-content">
+        <div class="container">
+            <div class="row">
+              <div id="col" class="col-md-9 post-content" data-aos="fade-up"></div>
+
+                <!-- ========single post content============ -->
+                <div class="single-post" >
+                    <div class="post-meta"><span class="date">Machine Learning Model </span><span class="mx-1">&bullet;</span><span>oct 23 '23</span> <span class="mx-1">&bullet;</span>SANJEEV KUMAR<span></span> </div>
+                    <h1 class="mb-5" style="text-align: center;">Debugging Machine Learning Model/ Bias Variance Tradeoff</h1>
+
+                    <figure class="my-4">
+                      <img src="assets/img/tradeoff debugging.jpg" alt="" class="img-fluid" style="height: 25rem; width: 90%;" >
+                     
+                  </figure>
+                    
+                      <h2>Discussion Topic</h2>
+                      <ul style="font-weight: 550; font-size: 22px;">
+                        <li>Why/ how is it to debug ML/DL model?</li>
+                        <li>Why is it difficult to achieve it?</li>
+                        <li>What is Bias?</li>
+                        <li>What is Variance?</li>
+                        <li>Debugging Example?</li>
+                        <li>How to reduce bias and variance?</li>
+                        <li>What is Regularization?</li>
+                        <li>Practical of Bias Variance and Regularization?</li>
+                      </ul>
+
+                      <!-- start of quizes -->
+
+                      <h3>First let's have a quiz </h3>
+                      <form style="font-size: 22px; font-weight: 400" action="/action_page.php">
+                        <p style=" font-weight: 600; font-style:oblique;">1. Different models trained using different training datasets derived from same population has lower accuracy but make similar or consistent predictions, then the models are said to have _______ ?</p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Low bias, high variance</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">High bias, high variance</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">High bias, low variance</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript"> Low bias, low variance</label><br>
+                      
+                        <br>
+                        <p style="font-weight: 600; font-style:oblique;">2. Regression models trained on different training datasets derived from same population usually have ________ ?</p>
+                          <input type="radio" id="age1" name="age" value="30">
+                          <label for="age1">low bias</label><br>
+                          <input type="radio" id="age1" name="age" value="30">
+                          <label for="age1">high bias</label><br>
+                        <br>
+                        <p style="font-weight: 600; font-style:oblique;">3. If models trained on different training datasets derived from same population have different performance or make distinctly different predictions on unseen dataset, the models are said to have ____________ ?</p>
+                          <input type="radio" id="new" name="model" value="1">
+                          <label for="new">High variance</label><br>
+                          <input type="radio" id="new" name="model" value="1">
+                          <label for="new">low variance</label><br>
+
+                          <br>
+                          <p style="font-weight: 600; font-style:oblique;">4. Unpruned decision trees trained on different training datasets derived from same population usually have ________ ?</p>
+                            <input type="radio" id="trees" name="model1" value="2">
+                            <label for="trees">High variance</label><br>
+                            <input type="radio" id="trees" name="model1" value="2">
+                            <label for="trees">low variance</label><br>
+
+                            <br>
+                            <p style="font-weight: 600; font-style:oblique;">5. A model having high bias will most likely be suffering from ____________ ?</p>
+                            <input type="radio" id="trees" name="model2" value="3">
+                            <label for="trees">overfitting</label><br>
+                            <input type="radio" id="trees" name="model2" value="3">
+                            <label for="trees">underfitting</label><br>
+
+                            <br>
+                            <p style="font-weight: 600; font-style:oblique;">6. A model having high variance will most likely be suffering from ____________ ?</p>
+                            <input type="radio" id="trees" name="model3" value="4">
+                            <label for="trees">overfitting</label><br>
+                            <input type="radio" id="trees" name="model3" value="4">
+                            <label for="trees">underfitting</label><br>
+
+                            <br>
+                            <p style="font-weight: 600; font-style:oblique;">7. Ideally, the model should have _______ bias, ________ variance ?</p>
+                            <input type="radio" id="trees" name="model4" value="5">
+                            <label for="trees">low,low</label><br>
+                            <input type="radio" id="trees" name="model4" value="5">
+                            <label for="trees">high,low</label><br>
+                            <input type="radio" id="trees" name="model4" value="5">
+                            <label for="trees">low,high</label><br>
+                            <input type="radio" id="trees" name="model4" value="5">
+                            <label for="trees">high, high</label><br>
+
+                            <br>
+                            <p style="font-weight: 600; font-style:oblique;">8. In case the models behave differently (different performance) when trained with different dataset derived from the same population, the models are said to have _________ ?</p>
+                            <input type="radio" id="trees" name="model5" value="6">
+                            <label for="trees">High variance</label><br>
+                            <input type="radio" id="trees" name="model5" value="6">
+                            <label for="trees">low variance</label><br>
+                           
+
+                            <br>
+                            <p style="font-weight: 600; font-style:oblique;">9. Different models trained using different training datasets derived from same population has high accuracy or make similar accurate predictions, then the models are said to have _______ ?</p>
+                            <input type="radio" id="trees" name="model6" value="7">
+                            <label for="trees">low bias</label><br>
+                            <input type="radio" id="trees" name="model6" value="7">
+                            <label for="trees">high bias</label><br>
+                      </form>
+                      
+                       <!--end of quizes  -->
+                      <br>       
+                        <h3 style="text-align: center; color: rgb(10, 2, 32);">Let's Start the Discussion </h3>
+                        <!-- <img src="/course/assets/img/machine learning model.jpg" alt="" class="img-fluid" style="height: 25rem; width: 100%; " > -->
+                    <p class=" my-4 post-content" style="font-size: 22px; font-weight: 400;"><span class="firstcharacter" >M</span>odel selection within the limit of the specified error is a central problem in a supervised learning. In predictive modeling, the most important question is what is the accuracy of the model and how it can be reduced. The answer lies in error function, precisely it’s two nonsense son bias and variance.</p>
+
+                    <figure class="post-content my-4">
+                        
+                        <div>
+                          <p style="font-size: 22px; font-weight: 400;">One wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously. Simpler model has low/high variance but high bias. Similarly, complex model has low bias but high variance. Bias variance problem is the conflict in trying to simultaneously minimize these two sources of error that prevented supervised learning algo from genializing beyond training.
+                          <br>
+                          Before, going further, we need to understand bias and variance of the model. Bias and variance are both important measures of quality of estimator/model. Bias model is also called underfitting and Variance model is called overfitting.
+                          <br>
+                          Bias error is an error from erroneous assumption in the learning algo. While, variance is an error from sensitivity to small fluctuations in the training set.
+                          <br>
+                         
+                          </p>
+
+                        </div>
+                        <h4>Prediction Error = Error due to biasness of the model (detected during training) + Error due to sensitivity of the model (detected during testing) <br>
+                          Prediction Error = (Bias)**2 + Variance + Fixed Noise <br>
+                          Mathematically, <br>
+                          Bias = E[_theta] – theta
+                            Variance = E[(E(_theta) - _theta)^2]
+                          </h4><br>
+                          <div>
+                            <p  style="font-size: 22px; font-weight: 400;">
+                              The derivation of the above equation is well known so I am not going in that direction. <br>
+                              To effectively debug a machine learning model, it is crucial to gain a comprehensive understanding of the factors that contribute to errors. These errors can arise from various sources, including bias, variance, or noise. By comprehending the specific influences at play, one can undertake targeted debugging efforts.
+                            
+                            </p>
+                            <h4 style="text-align: center; color: rgba(11, 11, 11, 0.807);">Let’s take one example of how to do debugging. </h4>
+                              <img src="/assets/img/machineModel/training instance.jpg" alt="" class="img-fluid" style="height: 25rem; width: 100%; " >
+
+                              <p style="font-size: 22px; font-weight: 400;" >
+                                In the above picture, I have taken error vs number of training instances and plotted training error, test error and acceptable test error (which the client is happy to take it). Moreover, I have drawn to region one in the left-hand side another in the right-hand side. <br>
+                                Now, one person starts building model. What should once be taken to build a good model? Before, going further, one quick question. Which regime has highest bias and highest variance?
+                                Regime 1 has highest variance and regime 2 has highest bias.
+                                In regime 1, the reason for the highest variance is evident through the substantial disparity between the training error and the test error. This notable distinction highlights the presence of significant variance within the model. Conversely, in the second scenario, where the error surpasses the acceptable test error threshold, it becomes apparent that the model is undoubtedly biased.
+                                <br>
+                                Now, observe how bias and variance can be reduced. The bias-variance tradeoff can be understood as trade off between a simplicity and complexity.
+                                <br>
+                                The picture above clearly illustrates that increasing the number of training examples, or adding more data, has a significant impact on reducing training error and, consequently, reducing variance. In addition, techniques such as bagging and increasing regularization, which include methods like early stopping, lasso, and ridge, also effectively mitigate high variance.
+                                <br>
+                                TO reduce high bias, there are number of methods such as kernelization, adding features, boosting and decreasing regulization
+                                <br>
+
+                              </p>
+                              <img src="/assets/img/machineModel/model complexity.jpg" alt="" class="img-fluid" style="height: 25rem; width: 100%; " >
+                              <p style="font-size: 22px; font-weight: 400;" >
+                                From the picture, it is very evident that how bias and variance contribute in the error with the increasing model complexity.
+                              </p>
+                              <h4 style="text-align: center; font-weight: bolder; color: rgba(11, 11, 11, 0.807);">Now talk about Regularization</h4>
+                              <h5 style="color: rgba(11, 11, 11, 0.807); font-weight: 700;">What is the motivation of regularization? How it is influencing the bias and variance of the model ?</h5>
+                              <p style="font-size: 22px; font-weight: 400;" >
+                                Regularization is a concept derived from the realm of regression, where a crucial obstacle lies in mitigating the impact of outliers. Outliers can exert excessive influence on the parameters of a linear regression model, thereby necessitating a means to restrict the magnitude of these parameters. Consequently, it becomes imperative to incorporate certain constraints into the loss function in order to effectively address this issue. <br>
+                                Before moving ahead, let’s understand some maths intuition of the effect of parameters on the output. <br>
+                                
+
+
+                              </p>
+                              <h5 style="text-align: center; color: rgba(11, 11, 11, 0.807); font-weight: 700;"> Y = 2x + 4x**2</h5>
+                                <p style="font-size: 22px; font-weight: 400;">
+                                  Here, x**2 variable has more effect than x variable because the parameters magnitude. So if the beta value of the regression has some high value because of the influence of outlier, we have to limit this influence by introducing some constraints. 
+                                  <br>
+                                  Let’s take one example of cost function <br>
+                                  <h5 style=" color: rgba(11, 11, 11, 0.807); font-weight: 700;">Cost function = (b-2)**2</h5>
+                                  
+
+                                </p>
+                                <p style="font-size: 22px; font-weight: 400;">We need to find some b which will make this cost function zero, which is 0. But the problem is at this value variance will be very high. So, we need to stop at some lower value to limit the effect of variance. some <span>b<1</span>
+                                <br>
+                                </p>
+                                <img src="/assets/img/machineModel/contraintzone.jpg" alt="" class="img-fluid" style="height: 20rem; width: 45%; " >
+                                <p style="font-size: 22px; font-weight: 400;">Same as if b is negative b>-1
+                                <br>
+                                Combining both will give |b| <span><1</span> 
+                                <br>
+                                So the error function is 
+                                <br>
+                                (y-bx+bo)**2 and |b|<span><1</span>
+                                <br>
+                                Combining both on introducing langrage constant 
+                                <br>
+                                (y-bx+bo)**2 + lamda * |b|
+                                <br>
+                                Lamda is the regularization factor. <br>
+                                So, high lamda will drag the value of error towards smaller b and hence reduce the variance from the model.
+                                </p>
+
+                                <h4 style="text-align: center; color: rgba(11, 11, 11, 0.807);">Memes on Internet about Bias Variance</h4>
+                                <img src="/assets/img/machineModel/bias.jpg" alt="" class="img-fluid" style="height: 25rem; width: 90%; " >
+                                <h4 style="text-align: center; color: rgba(11, 11, 11, 0.807);">Python code on Finding Bias and Variance in the model:</h4>
+                                <img src="/assets/img/machineModel/pycode.jpg" alt="" class="img-fluid" style="height: 25rem; width: 80%; " >
+
+                                <p style="font-size: 22px; font-weight: 400;">
+                                  Average expected loss: 113.497 <br>
+                                  Average bias: 24.059 <br>
+                                  Average variance: 89.437
+                                </p>
+                                <h4 style="text-align: center; color: rgba(11, 11, 11, 0.807);">Python code on Regularization: </h4>
+                                <img src="/assets/img/machineModel/regulation.jpg" alt="" class="img-fluid" style="height: 25rem; width: 80%; " >
+                                
+                                <h4 style="text-align: center; color: rgba(11, 11, 11, 0.807);">Model </h4>
+                                <img src="/assets/img/machineModel/regulationgraph.jpg" alt="" class="img-fluid" style="height: 25rem; width: 80%; " >
+
+                                <p style="font-size: 22px; font-weight: 400;">
+                                  model 1 <br>
+                                  <h5>beta:  [1.02159925] intercept:  -0.17003637007120354</h5> <br>
+
+                                </p>
+                                <p style="font-size: 22px; font-weight: 400;">
+                                  model 2 <br>
+                                  <h5>beta:  [[10.3114334]] intercept:  [-27.69547091]</h5> <br>
+
+                                </p>
+                                <p style="font-size: 22px; font-weight: 400;">
+                                  model 3 <br>
+                                  <h5>beta:  [8.34779704] intercept:  [-17.87728909]</h5> <br>
+
+                                </p>    
+                          </div>
+                          
+
+
+
+                    </figure>
+
+
+                   
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 22px; font-weight: bolder; margin-left: 25%;">
+          For More Interesting and Knowlegeable Blog Kindly Visit <a href="blog.html" style="color: green;">Our Blog Section ! </a>
+        </p>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up" style="text-align: center;">Share Your Insights</h2>
+          <!-- <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bi bi-browser-edge"></i>
+              <h3>Our Website</h3>
+              <p>lorem.com</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-9 col-lg-12 mt-4">
+            <form  method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" id="name" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input  type="email"  class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button id="btn" type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+   
+  </main>
+  <form class="back"> 
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  
+  
+  <!-- ==============footer================= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h3 class="footer-heading">About ThinkAi</h3>
+            <p>Machine learning , DeepLearning explained and Artifical Intelligence with clear, concise videos. Saves time for your next big interview .</p>
+            <p><a href="index.html" class="footer-link-more">Learn More</a></p>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Courses </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Blog </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact US </a></li>
+              
+
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading"> Categories</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Artifical intelligence</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Machine Learning</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Deep Learning</a></li>
+             
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Recent Blog</h3>
+
+            <ul class="footer-links footer-blog-entry list-unstyled">
+              <li>
+                <a href="Machine-Learning-Model.html" class="d-flex align-items-center">
+                  <img src="assets/img/electronics.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">MACHINE LEARNING MODEL</span><span class="mx-1">&bullet;</span><span>oct 21 '23</span></div>
+                    <span>Debugging Machine Learning Model/ Bias Variance Tradeoff
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/BigData-Machine-Learning.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Machine Learning</span><span class="mx-1">&bullet;</span><span>oct 18 '23</span></div>
+                    <span>Machine Learning is branch of Computer Science used to develop and create diffent methodology. </span>
+                  </div>
+                </a>
+              </li>
+
+              <li><a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/database image.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Database Design </span><span class="mx-1">&bullet;</span><span>aug 15 '23</span></div>
+                    <span>Database design can be done using MySQL , SQL , NoSQL , MongoDB.</span>
+                  </div>
+              </a>
+              </li>
+            </ul>
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              <img style="height: 30px; width: 30px;" src="assets/img/logos.png" alt="">
+              <span>©ThinkAi</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="website"><i class="bi bi-browser-edge"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- =============end of footer===================== -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+
+ 
+
+  <!-- for contact us   -->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- end of contact us form  -->
+
+
+
+
+</body>
+</html>

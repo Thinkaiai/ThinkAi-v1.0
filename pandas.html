@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pandas Library</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/conversation.png" rel="icon">
+    <link href="assets/img/conversation.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+  
+   
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    
+
+  
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        
+        <img src="assets/img/logos.png" alt="">
+        <h1>ThinkAi</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a href="index.html">Courses</a></li> -->
+          <li class="dropdown"><a href="index.html"><span style="font-size: larger; font-weight: 700;">Courses</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <!-- <li><a href="search-result.html">Search Result</a></li> -->
+              <li><a href="#">Artifical Intellence</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Web Developer</a></li>
+              <li><a href="#">Full Stack developer</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" style="font-size: larger; font-weight: 700;">Blog</a></li>
+          
+          <li><a href="#contact" style="font-size: larger; font-weight: 700;">Contact</a></li>
+          
+        </ul>
+        
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main class="main" id="main">
+    <section class="single-post-content">
+        <div class="container">
+            <div class="row">
+              <div id="col" class="col-md-9 post-content" data-aos="fade-up"></div>
+
+                <!-- ========single post content============ -->
+                <div class="single-post" >
+                    <div class="post-meta"><span class="date">Python Pandas series</span><span class="mx-1">&bullet;</span><span>oct 23 '23</span> <span class="mx-1">&bullet;</span>SANJEEV KUMAR<span></span> </div>
+                    <h1 class="mb-5" style="text-align: center;">Pandas Series</h1>
+
+                    <figure class="my-4">
+                      <img src="assets/img/pandas/root img.jpg" alt="" class="img-fluid" style="height: 25rem; width: 90%;" >
+                     
+                  </figure>
+                    
+                    
+
+                      
+                          
+                        <h3 style="text-align: center; color: rgb(10, 2, 32);">Let's Start the Discussion </h3>
+                        <!-- <img src="/course/assets/img/machine learning model.jpg" alt="" class="img-fluid" style="height: 25rem; width: 100%; " > -->
+                    <p class=" my-4 post-content" style="font-size: 22px; font-weight: 400;"><span class="firstcharacter" >P</span>andas is a Python library for data analysis. Started by Wes McKinney in 2008 out of a need for a powerful and flexible quantitative analysis tool, pandas has grown into one of the most popular Python libraries. It has an extremely active community of contributors.</p>
+
+                    <figure class="post-content my-4">
+                        
+                        <div>
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Pandas Series----One dimesional data structure of Pandas
+                           
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >Series is a one-dimensional array with axis labels
+                                We can access the items in a Series with their index</p>
+                            </p>
+
+                            <img src="/assets/img/pandas/1.png" alt="" style="width: 95%;">
+  
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                0 &emsp; &emsp;    10 <br>
+                                1 &emsp; &emsp;   20 <br>
+                                2 &emsp; &emsp;    30 <br>
+                                dtype:&nbsp;&nbsp; int64 <br>
+                                10
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">DataFrame---the two-dimensional data structure of Pandas
+                           
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >Consists of labeled rows and columns
+
+                                how to create a DataFrame using Python dictionaries and NumPy arrays.
+                                
+                                using the shape method that returns a tuple containing the number of rows and columns</p>
+                            </p>
+
+                            <img src="/assets/img/pandas/2.png" alt="" style="width: 95%;">
+  
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                &emsp; &emsp; &nbsp; &nbsp; Name &emsp;  &nbsp;&nbsp;Age <br>
+                                0   &emsp; &emsp;  Jane &emsp; &emsp; 24 <br>
+                                1  &emsp; &emsp;  John &emsp; &emsp;  21 <br>
+                                2  &emsp; &emsp;  Matt&emsp; &emsp;   26 <br>
+                                3  &emsp; &emsp;Ashley &emsp; &nbsp;&nbsp;  32 <br>
+                                (4, 2)
+                            </p>
+                        
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">By default, column names are assigned integer index, but we can change it using the columns parameter</p>
+                            <img src="/assets/img/pandas/3.png" alt="" style="width: 95%;">
+  
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                &emsp; &emsp;    A &emsp; &emsp; B &emsp; &emsp;  C &emsp; &emsp;  D &emsp; &emsp;  E <br>
+                            0&emsp;&emsp;3 &emsp; &emsp;&nbsp6 &emsp; &emsp;&nbsp 1 &emsp; &emsp;&nbsp&nbsp 8 &emsp; &emsp;&nbsp; 2 <br>
+                            1&emsp;&emsp;3 &emsp; &emsp;&nbsp5 &emsp; &emsp;&nbsp 6 &emsp; &emsp;&nbsp&nbsp 9 &emsp; &emsp;&nbsp; 6 <br>
+                            2&emsp;&emsp;6 &emsp; &emsp;&nbsp9 &emsp; &emsp;&nbsp 5 &emsp; &emsp;&nbsp&nbsp 9 &emsp; &emsp;&nbsp; 7 <br>
+                            
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">How to use the read_csv function</p>
+                            <img src="/assets/img/pandas/4.png" alt="" style="width: 95%;">
+  
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                &emsp;     product_code &emsp;  product_group &emsp;  stock_qty &emsp;   Cost &emsp;   Price &emsp;   last_week_sales &emsp;  last_month_sales  <br>
+                            0&emsp;&emsp;4187 &emsp;&emsp;&emsp;&emsp;PG2 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;498&emsp;&emsp;420.76&emsp;569.91&emsp;&emsp;13&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;58  <br>
+                            1&emsp;&emsp;4195 &emsp;&emsp;&emsp;&emsp;PG2 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;473&emsp;&emsp;545.64&emsp;712.41&emsp;&emsp;16&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;58  <br>
+                            2&emsp;&emsp;4204 &emsp;&emsp;&emsp;&emsp;PG2 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;968&emsp;&emsp;640.42&emsp;854.91&emsp;&emsp;22&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;88  <br>
+                            3&emsp;&emsp;4219 &emsp;&emsp;&emsp;&emsp;PG2 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;241&emsp;&emsp;869.69&emsp;1034.55&emsp;&nbsp;&nbsp14&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;45  <br>
+                            4&emsp;&emsp;4718 &emsp;&emsp;&emsp;&emsp;PG2 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1401&emsp;&nbsp;&nbsp12.54&emsp;&nbsp;&nbsp26.59&emsp;&emsp;&nbsp;&nbsp50&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;285  <br>
+                            
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">The size, shape, and len methods
+                            </p>
+                            <img src="/assets/img/pandas/5.png" alt="" style="width: 95%;">
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                (1000, 7) <br>
+                                7000 <br>
+                                1000
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> dtypes method returns the data type of all columns <br>
+ 
+                                                columns method returns the column as an index but we can convert it into list
+                            </p>
+                            <img src="/assets/img/pandas/6.png" alt="" style="width: 95%;">
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                product_code  &emsp;&emsp;&emsp;&emsp;     int64 <br>
+                                product_group &emsp;&emsp;&emsp;&nbsp;     object <br>
+                                stock_qty   &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;int64 <br>
+                                cost      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;        float64 <br>
+                                price      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;        float64 <br>
+                                last_week_sales &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;   int64 <br>
+                                last_month_sales  &emsp;&emsp;&nbsp;&nbsp;&nbsp; int64 <br>
+                                dtype: object <br>
+                                ['product_code', <br>
+                                'product_group', <br>
+                                'stock_qty' <br>,
+                                'cost', <br>
+                                'price', <br>
+                                'last_week_sales', <br>
+                                'last_month_sales']
+                            </p>
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                            We can use the astpye function to change the data types of columns.
+
+                            The astype function also accepts a dictionary, so we can change the data type of multiple columns in a single operation. The dictionary keys indicate that the column name and values are the new data types.
+                            </p>
+                            <img src="/assets/img/pandas/7.png" alt="" style="width: 95%;">
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                product_code  &emsp;&emsp;&emsp;&emsp;     int64 <br>
+                                product_group &emsp;&emsp;&emsp;&nbsp;     object <br>
+                                stock_qty   &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;float64 <br>
+                                cost      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;        float64 <br>
+                                price      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;        float64 <br>
+                                last_week_sales &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;   float64 <br>
+                                last_month_sales  &emsp;&emsp;&nbsp;&nbsp;&nbsp; int64 <br>
+                                dtype: object <br>
+                            
+                            
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                Different Values in a Column
+                                </p>
+                                <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                    Using the unique and nunique functions
+                                </p>
+                                <img src="/assets/img/pandas/8.png" alt="" style="width: 95%;">
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                6 <br>
+                                ['PG2' 'PG4' 'PG6' 'PG5' 'PG3' 'PG1']
+                                
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                value_counts function
+                                </p>
+                                <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                    value_counts function returns all the distinct values in a column along with the number of their occurrences.
+                                </p>
+                                <img src="/assets/img/pandas/9.png" alt="" style="width: 95%;">
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                PG4&emsp;&emsp;    349 <br>
+                                PG5&emsp;&emsp;    255 <br>
+                                PG6&emsp;&emsp;    243 <br>
+                                PG2&emsp;&emsp;     75 <br>
+                                PG3&emsp;&emsp;     39 <br>
+                                PG1&emsp;&emsp;     39 <br>
+                                Name: product_group, dtype: int64
+                                
+                            </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                               Measures of Central Tendency
+                                </p>
+                                <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                    mean, median, and mode Var and Std describe
+                                    
+                                    
+                                </p>
+                                <img src="/assets/img/pandas/10.png" alt="" style="width: 95%;">
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                mean:  <br>
+                                67.06350999999992 <br>
+                                median:  <br>
+                                23.74 <br>
+                                mode:  <br>
+                                10.44 <br>
+                                minimum:  <br>
+                                0.66 <br>
+                                maximum:  <br>
+                                1500.05 <br>
+                                count&emsp;&emsp;    1000.000000 <br>
+                                mean&emsp;&emsp;       67.063510 <br>
+                                std &emsp;&emsp;      144.104975 <br>
+                                min &emsp;&emsp;        0.660000 <br>
+                                25% &emsp;&emsp;       13.290000 <br>
+                                50% &emsp;&emsp;       23.740000 <br>
+                                75% &emsp;&emsp;       56.990000 <br>
+                                max &emsp;&emsp;     1500.050000 <br>
+                                Name:&emsp; price,&emsp; dtype:&emsp; float64
+                            </p>
+                            <img src="/assets/img/pandas/11.png" alt="" style="width: 95%;">
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >Int64Index([5694, 2591, 2645, 1942, 5990, 8838, 8842, 6529, 2938, 2635,
+                                ... <br>
+                                 891,  892, 4917, 5621, 4935, 4936, 1313, 9739, 9767, 3018],
+                               dtype='int64', length=953)</p>
+
+                               <p class=" my-4 " style="font-size: 22px; font-weight: 700;">How can you find the number of rows in a data frame?
+                                shape and len .</p>
+                                <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                    One of the most commonly performed operations on a DataFrame is filtering
+
+                                    We can filter in terms of rows and columns
+
+                                    The loc and iloc methods are essential Pandas methods used for filtering, selecting, and manipulating data
+
+                                    They allow us to access the desired combination of rows and columns
+
+                                    loc uses row and column labels.
+                                    iloc uses row and column indexes.
+
+                                    row index in the DataFrame is created by defaut, having no specific column name
+                                    df_name.index returns the rangeindex data structure
+                                    we can reset index by the name of the column as well
+                                    coumn index is the name of the columns created by defaut, similar to row index
+
+                                    loc works with labels whereas iloc works with indices.
+                                
+                                </p>
+                                <img src="/assets/img/pandas/12.png" alt="" style="width: 95%;">
+
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                &emsp;&emsp;&emsp;   product_code &emsp;&emsp;  product_group <br>
+                                0&emsp;&emsp;&emsp;          4187&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG2 <br>
+                                1&emsp;&emsp;&emsp;          4195&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG2 <br>
+                                2&emsp;&emsp;&emsp;          4204&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG2 <br>
+                                3&emsp;&emsp;&emsp;          4219&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG2 <br>
+                                4&emsp;&emsp;&emsp;          4718&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG2 <br>
+                                  
+                                5&emsp;&emsp;&emsp;          5630&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                6&emsp;&emsp;&emsp;          5631&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                7&emsp;&emsp;&emsp;          5634&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                8&emsp;&emsp;&emsp;          2650&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                 
+                                5&emsp;&emsp;&emsp;          5630&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                6&emsp;&emsp;&emsp;          5631&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                7&emsp;&emsp;&emsp;          5634&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4 <br>
+                                8&emsp;&emsp;&emsp;          2650&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           PG4
+                            </p>
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> df.loc[df['column name'] condition, 'new column name'] = 'value if condition is met'
+ 
+                                isin method</p>
+                            
+                                <img src="/assets/img/pandas/13.png" alt="" style="width: 95%;">
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                                <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; price &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; stock_qty   <br>
+                                    3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    1034.55 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;       241 <br>
+                                    8 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     111.06 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        239 <br>
+                                    165 &emsp;&emsp;&emsp;&emsp;&emsp;  208.91 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        244 <br>
+                                    186 &emsp;&emsp;&emsp;&emsp;&emsp;   427.41 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        369 <br>
+                                    199 &emsp;&emsp;&emsp;&emsp;&emsp;   104.49 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        144 <br>
+                                </p>
+
+                            <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> How to find the number of unique values in a column.
+                              How to find the average value of a column.
+                              How to filter the values in a DataFrame.</p>
+                                                          
+                                <img src="/assets/img/pandas/14.png" alt="" style="width: 95%;">
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                                <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                  201
+                                </p>
+
+                                <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Introduction to using Apply/Map in Pandas--------- <br>
+
+                                  df['my_col'].map(lambda x:my_magic_fn(x)) <br>
+                                  
+                                  If the function is not applied to single column then use df.apply(lambda x:fun(x1,x2)) with axis =1 to indicate
+                                  this will be applied to every row or in max function case we are finding the max in the column so axis =0 <br>
+                                  
+                                  If the function is applied to every cell in the dataset,rather than row or column wise.</p>
+
+                                  <h2>Slicing and Indexing on Strings</h2>
+
+                                  <p class=" my-4 " style="font-size: 22px; font-weight: 700;">text data manipulation is done thorugh str, it allows to perform operations on the entire columns
+
+                                    actually str is used to access index of the string
+                                    splitting and combining operations.</p>
+
+                                    <img src="/assets/img/pandas/15.png" alt="" style="width: 95%;">
+                                    <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                      Staff data frame has the following columns: <br>
+                                      ['name', 'city', 'date_of_birth', 'start_date', 'salary', 'department'] <br>
+                                      0&emsp;&emsp;    J <br>
+                                      1&emsp;&emsp;    J <br>
+                                      2&emsp;&emsp;    M <br>
+                                      3&emsp;&emsp;    A <br>
+                                      4&emsp;&emsp;    J <br>
+                                      5&emsp;&emsp;    H <br>
+
+                                      Name: &emsp; name,  &emsp;dtype: &emsp; object <br>
+                                      0&emsp;&emsp;        John <br>
+                                      1&emsp;&emsp;        Jane <br>
+                                      2&emsp;&emsp;        Matt <br>
+                                      3&emsp;&emsp;      Ashley <br>
+                                      4&emsp;&emsp;    Jonathan <br>
+                                      5&emsp;&emsp;        Hale <br>
+                                      Name: &emsp; 0,  &emsp;dtype: &emsp; object
+                                    
+                                    </p>
+
+                                    <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                      The Pandas library also provides the DataFrame replace function that can be used to replace entire values.  <br>
+
+                                      str.replace can be used to replace a part of a string. We can replace one character, multiple characters, or the entire string. <br>
+                                      
+                                      DataFrame.replace can be used to replace the entire value. We can also use this function to replace values with other data types such as integer and boolean.
+                                    </p>
+
+                                    <img src="/assets/img/pandas/16.png" alt="" style="width: 95%;">
+                                    <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                      Staff data frame has the following columns: <br>
+                                      ['name', 'city', 'date_of_birth', 'start_date', 'salary', 'department'] <br>
+                                      0&emsp;&emsp;    Texas <br>
+                                      1&emsp;&emsp;    California <br>
+                                      2&emsp;&emsp;    Texas <br>
+                                      3&emsp;&emsp;    California <br>
+                                      4&emsp;&emsp;    Georgia <br>
+                                      Name: &emsp; state,  &emsp;dtype: &emsp; object
+                                      
+
+                                      </p>
+
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                        datetime64[ns] data type can be used to express date and time values <br>
+
+                                        We can convert a string representing a date to a Timestamp by using theto_datetime` <br>
+
+                                        Another commonly used data type with dates and times is timedelta[ns] which is used for representing the difference between two datetime objects
+                                      </p>
+                                      <img src="/assets/img/pandas/17.png" alt="" style="width: 95%;">
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" >class 'pandas._libs.tslibs.timedeltas.Timedelta'
+                                      8 days 00:00:00</p>
+
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                        dt serves as a gate to Pandas functions and methods for date and time manipulation on a DataFrame.  <br>
+
+                                        methods are <br>
+                                        weekday <br>
+                                        hour <br>
+                                        minute <br>
+                                        second <br>
+                                      </p>
+                                      <img src="/assets/img/pandas/18.png" alt="" style="width: 95%;">
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                      &emsp;&emsp;start_date  &emsp;&emsp;start_month <br>
+                                      0&emsp; 2018-08-11&emsp;&emsp;&emsp;            8 <br>
+                                      1&emsp; 2017-08-24&emsp;&emsp;&emsp;            8 <br>
+                                      2&emsp; 2020-04-16&emsp;&emsp;&emsp;            4 <br>
+                                      3&emsp; 2021-02-11&emsp;&emsp;&emsp;            2 <br>
+                                      4&emsp; 2020-09-01&emsp;&emsp;&emsp;            9 <br>
+                                      5&emsp; 2021-10-20&emsp;&emsp;&emsp;           10
+                                      </p>
+                                    
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                        One Pandas function we can use to add or subtract dates and times is DateOffset. 
+
+                                      </p>
+                                      <img src="/assets/img/pandas/19.png" alt="" style="width: 95%;">
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                      &emsp;&emsp;start_date  &emsp;&emsp;&emsp;&emsp;raise date <br>
+                                      0&emsp; 2018-08-11&emsp;&emsp;&emsp;           2019-08-11 <br>
+                                      1&emsp; 2017-08-24&emsp;&emsp;&emsp;           2018-08-24  <br>
+                                      2&emsp; 2020-04-16&emsp;&emsp;&emsp;           2021-04-16 <br>
+                                      3&emsp; 2021-02-11&emsp;&emsp;&emsp;           2022-02-11 <br>
+                                      4&emsp; 2020-09-01&emsp;&emsp;&emsp;           2021-09-01  <br>
+                                                
+                                      </p>
+                                      
+                                      
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                        Handling missing values <br>
+
+                                      Missing value types : None and np.nan pandas introduce a new data type for none: NA But the entire column becomes float type even when the data of the remaining type is integer.
+                                      
+
+                                      </p>
+                                      <img src="/assets/img/pandas/20.png" alt="" style="width: 95%;">
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                      &emsp;&emsp;A  &emsp;&emsp;&emsp;&emsp;B  &emsp;&emsp;&emsp;&emsp;C <br>
+                                      0&emsp; 1&emsp;&emsp;&emsp;&emsp;          2.4 &emsp;&emsp;&emsp;&emsp;foo<br>
+                                      1&emsp; 2&emsp;&emsp;&emsp;&emsp;          6.2 &emsp;&emsp;&emsp;&emsp;zoo <br>
+                                      2&emsp; 3&emsp;&emsp;&emsp;&emsp;          5.1&emsp;&emsp;&emsp;&emsp;bar <br>
+                                      3&emsp; NA&emsp;&emsp;&emsp;         NaN &emsp;&emsp;NaN<br>
+                                     
+                                                
+                                      </p>
+                                    
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                        We can use isna or notna function to detect missing values
+                                        sum(axis =1) to count in row wise 
+
+                                    
+
+                                      </p>
+                                      <img src="/assets/img/pandas/21.png" alt="" style="width: 95%;">
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                      A&emsp;&emsp;    1 <br>
+                                      B&emsp;&emsp;    2 <br>
+                                      C&emsp;&emsp;    2 <br>
+                                      D&emsp;&emsp;    1 <br>
+                                      dtype: int64
+                                     
+                                                
+                                      </p>
+                                    <h3>Dropna drops the row(by default axis = 0) with the na</h3>
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">
+                                        Dropping row/column is not a good option so we replace the data with the fillna
+
+                                    
+
+                                      </p>
+                                      <img src="/assets/img/pandas/22.png" alt="" style="width: 95%;">
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Output for above code</p>
+
+                                    <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                      &emsp;&emsp;&emsp;    A&emsp;&emsp;&emsp;    B&emsp;&emsp;&emsp;    C&emsp;&emsp;       D&emsp;&emsp;&emsp;&nbsp;   E <br>
+                                      0&emsp;&emsp;  1.00&emsp;&emsp;  2.4&emsp;&emsp;  foo&emsp;&emsp;  11.500&emsp;&emsp;  1 <br>
+                                      1&emsp;&emsp;  2.00&emsp;&emsp;  5.1&emsp;&emsp;  foo&emsp;&emsp;  11.875&emsp;&emsp;  2 <br>
+                                      2&emsp;&emsp;  3.00&emsp;&emsp;  5.1&emsp;&emsp;  zoo&emsp;&emsp;   6.200&emsp;&emsp;&nbsp;&nbsp;  3 <br>
+                                      3&emsp;&emsp;  3.25&emsp;&emsp;  2.6&emsp;&emsp;  bar&emsp;&emsp;  21.100&emsp;&emsp;  4 <br>
+                                      4&emsp;&emsp;  7.00&emsp;&emsp;  2.6&emsp;&emsp;  NaN&emsp;&emsp;   8.700&emsp;&emsp;  5 <br>
+                                     
+                                                
+                                      </p>
+                                      <h2>Data Analysis</h2>
+
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">groupby is used to group row with the distinct column
+                                        then we have to apply aggregation like mean() <br>
+                                        df.groupby(column name).agg(avg_price=("price","mean"),
+                                        total_sales = ("sales_quantity","sum")).sort_values(by = "total_sales",ascending = False)))
+                                        
+                                      </p>
+                                      
+                                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Pivot table function <br>
+                                        A pivot table is a summary table obtained by grouping and aggregating values of a more
+                                        extensive table. 
+                                        </p>
+
+                                        <img src="/assets/img/pandas/23.png" alt="" style="width: 95%;">
+
+                                        <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                          cut and qcut are used to convert continuous variables into categorical ones <br>
+                                          pd.qcut(df,q=3)
+                                        </p>
+                                        <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                          <span style="font-weight: 700;">where</span> condition:The where function can be used to update the values in a column 
+                                          based on some conditions. First where condition is evaluated then only updates happen.
+                                        </p>
+                                        <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                          <span style="font-weight: 700;">Visualization:</span> 
+                                          Histograms are used to visulize the distribution of values(column).It can considered
+                                          the visual version of the cut function.
+                                          pd.plot()
+                                          
+                                          parameters are used to make visulization more appealing
+                                          kind,figsize,title,xticks
+                                          </p>
+                                        <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                          <span style="font-weight: 700;"> scatter plot:</span> 
+                                         
+                                        this is mainly used to represent the relationship between two continuous variables
+                                        it basically provides correlation between two variables
+                                          </p>
+                                          <img src="/assets/img/pandas/24.png" alt="" style="width: 95%;">
+                                        <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                          <span style="font-weight: 700;">Combining DataFrame:</span> 
+                                         
+                                          
+                                          pd.concat([df1,df2],axis=0)----stacked
+                                          
+                                          </p>
+                                        <p class=" my-4" style="font-size: 22px; font-weight: 400;" > 
+                                          <span style="font-weight: 700;">Merging DataFrame:</span> 
+                                          
+                                          The concat function compares column name or row indexes when combining DataFrame
+                                          whereas the merge function compares values in the given column or column to check matcing rows
+                                          df.merge(df1,how = "left",on="product_code")
+                                          This is a left merge in which all the values in left df are kept and only the 
+                                          matching values in the product_code column from the sales are added and remaining
+                                          are filled with Nan
+                                          
+                                          
+                                          </p>
+
+
+                                
+
+
+                        </p>
+
+
+                        
+
+
+                   
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 22px; font-weight: bolder; margin-left: 20rem;">
+          For More Interesting and Knowlegeable Blog Kindly Visit <a href="blog.html" style="color: green;">Our Blog Section ! </a>
+        </p>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up" style="text-align: center;">Share Your Insights</h2>
+          <!-- <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bi bi-browser-edge"></i>
+              <h3>Our Website</h3>
+              <p>lorem.com</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-9 col-lg-12 mt-4">
+            <form  method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" id="name" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input  type="email"  class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button id="btn" type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+   
+  </main>
+  <form class="back"> 
+    <input type="button" value="Go back!" onclick="history.back()">
+   </form>
+  
+  
+  <!-- ==============footer================= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h3 class="footer-heading">About ThinkAi</h3>
+            <p>Machine learning , DeepLearning explained and Artifical Intelligence with clear, concise videos. Saves time for your next big interview .</p>
+            <p><a href="index.html" class="footer-link-more">Learn More</a></p>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Courses </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Blog </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact US </a></li>
+              
+
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading"> Categories</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Artifical intelligence</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Machine Learning</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Deep Learning</a></li>
+             
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Recent Blog</h3>
+
+            <ul class="footer-links footer-blog-entry list-unstyled">
+              <li>
+                <a href="Machine-Learning-Model.html" class="d-flex align-items-center">
+                  <img src="assets/img/electronics.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">MACHINE LEARNING MODEL</span><span class="mx-1">&bullet;</span><span>oct 21 '23</span></div>
+                    <span>Debugging Machine Learning Model/ Bias Variance Tradeoff
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/BigData-Machine-Learning.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Machine Learning</span><span class="mx-1">&bullet;</span><span>oct 18 '23</span></div>
+                    <span>Machine Learning is branch of Computer Science used to develop and create diffent methodology. </span>
+                  </div>
+                </a>
+              </li>
+
+              <li><a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/database image.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Database Design </span><span class="mx-1">&bullet;</span><span>aug 15 '23</span></div>
+                    <span>Database design can be done using MySQL , SQL , NoSQL , MongoDB.</span>
+                  </div>
+              </a>
+              </li>
+            </ul>
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              <img style="height: 30px; width: 30px;" src="assets/img/logos.png" alt="">
+              <span>©ThinkAi</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="website"><i class="bi bi-browser-edge"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- =============end of footer===================== -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+
+ 
+
+  <!-- for contact us   -->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- end of contact us form  -->
+
+
+
+
+</body>
+</html>

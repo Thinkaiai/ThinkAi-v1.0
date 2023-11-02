@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Machine-Learning-visualization</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/conversation.png" rel="icon">
+    <link href="assets/img/conversation.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+  
+   
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    
+
+  
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        
+        <img src="assets/img/logos.png" alt="">
+        <h1>ThinkAi</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a href="index.html">Courses</a></li> -->
+          <li class="dropdown"><a href="index.html"><span style="font-size: larger; font-weight: 700;">Courses</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <!-- <li><a href="search-result.html">Search Result</a></li> -->
+              <li><a href="#">Artifical Intellence</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Web Developer</a></li>
+              <li><a href="#">Full Stack developer</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" style="font-size: larger; font-weight: 700;">Blog</a></li>
+          
+          <li><a href="#contact" style="font-size: larger; font-weight: 700;">Contact</a></li>
+          
+        </ul>
+        
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main class="main" id="main">
+    <section class="single-post-content">
+        <div class="container">
+            <div class="row">
+              <div id="col" class="" data-aos="fade-up"></div>
+
+                <!-- ========single post content============ -->
+                <div class="single-post" >
+                    <div class="post-meta"><span class="date">Machine Learning visualization </span><span class="mx-1">&bullet;</span><span>oct 23 '23</span> <span class="mx-1">&bullet;</span>SANJEEV KUMAR<span></span> </div>
+                    <h1 class="mb-5" style="text-align: center;">Matplotlib : A powerful Plotting Package</h1>
+
+                    <figure class="my-4">
+                      <img src="assets/img/Matplotlib/5-Free-Data-Analysis-and-Graph-Plotting-Software-for-Thesis.jpg" alt="" class="img-fluid" style="height: 25rem; width: 90%;" >
+                     
+                  </figure>
+                  
+                      
+                     
+                      
+                        
+                        <!-- <img src="/course/assets/img/machine learning model.jpg" alt="" class="img-fluid" style="height: 25rem; width: 100%; " > -->
+                    <p class=" my-4 post-content" style="font-size: 22px; font-weight: 700; ">Below code is a way to call matplotlib package. </p>
+                    
+                    
+                    <!-- <p class=" my-4 post-content" style="font-size: 22px; font-weight: 400;"><span class="firstcharacter" >M</span>odel selection within the limit of the specified error is a central problem in a supervised learning. In predictive modeling, the most important question is what is the accuracy of the model and how it can be reduced. The answer lies in error function, precisely it’s two nonsense son bias and variance.</p> -->
+                    <figure class="post-content my-4">
+                      
+                      <img src="/assets/img/Matplotlib/1.png" alt="" style="width: 95%;">
+                    </figure>
+                    <figure class="post-content my-4">
+                      
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">This is oneliner way to call plot without exposing the low level details. Actually, it picks the current axes.Don't worry about the axes(not x axis, axes contains axis and other objects of interest) we will discuss. The details are the tree like hierarchy in plt objects. From below image it would be clear. </p>
+                      <img src="/assets/img/Matplotlib/2.png" alt="" style="width: 95%;">
+                    </figure>
+                    <figure class="post-content my-4">
+                      
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;" >Figure is the main canvas where the plot will hold, and every plot has associated axes which is controlled by figure
+
+                        The function subplots() helps us create a figure. If we don’t pass the nrows or ncols parameters, subplots() will create a figure with only one axes.
+                        figure is an instance and axes is an array of objects
+                        Then we associate data to each axes through plot()
+                        </p>
+                      <img src="/assets/img/Matplotlib/graph.png" alt="" style="width: 95%;">
+                    </figure>
+                    <figure class="post-content my-4">
+                      <img src="/assets/img/Matplotlib/3.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">Text(0.5, 1.0, 'the forth subplot')</p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code</p>
+                      <img src="/assets/img/Matplotlib/3.png" alt="" style="width: 95%;">
+
+                    </figure>
+                    <figure class="post-content my-4">
+                      <img src="/assets/img/Matplotlib/4.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+                      <img src="/assets/img/Matplotlib/lenaxe.png" alt="" style="width: 95%;">
+                      
+
+                    </figure>
+
+                    <figure class="post-content my-4" style="font-size: 22px; font-weight: 400; ">
+                      <p style="font-size: 22px; font-weight: 700; ">There are 3 alternative ways to create Plot</p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">1. Directly using pyplot module plot() function--</p>
+                      <img src="/assets/img/Matplotlib/5.png" alt="" style="width: 95%;">
+                      
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">[matplotlib.lines.Line2D at 0x16afcd575e0] </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+                      <img src="/assets/img/Matplotlib/line2d.png" alt="" style="width: 95%;">
+                      
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">2. Plot from the axes object by calling subplot() of one plot</p>
+
+                      <img src="/assets/img/Matplotlib/6.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">[matplotlib.lines.Line2D at 0x16afcc30b80] </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/belowline2d.png" alt="" style="width: 95%;">
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">3. Plot from the figure object Here 111 is index,row,col</p>
+
+                      <img src="/assets/img/Matplotlib/7.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">[matplotlib.lines.Line2D at 0x16afdc14eb0] </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/below below line 2d.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Tick of a plot is the specific points on the coordinate axis By default axes will set a default tick based on the ranges of the axes</p>
+
+                      <img src="/assets/img/Matplotlib/8.png" alt="" style="width: 95%;">
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/axe spines.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Spine is the boundary of the axes i.e top, left, right, bottom spine is accessed through axes and to move spine, we can access set_position from spine object, passing axes and the position (0-1) parameter </p>
+
+                      <img src="/assets/img/Matplotlib/9.png" alt="" style="width: 95%;">
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/output righttopleft.png" alt="" style="width: 95%;">
+
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> Legend is the description of the elements of the plot </p>
+
+                      <img src="/assets/img/Matplotlib/10.png" alt="" style="width: 95%;">
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/outputtan.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> Annotate to identify data points Here bbox parameter is used to beautify  </p>
+
+                      <img src="/assets/img/Matplotlib/11.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;"> Text(0.4, -40, '1.464=tanh(2)+0.5') </p>
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/outputtan2h.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> Adding Text to a plot, it is simpler than annotation </p>
+
+                      <img src="/assets/img/Matplotlib/12.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;"> Text(-2.5, 0.5, 'two functions') </p>
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/outputtantwofunction.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;"> Grid is way to understand the curve quickly. We can use grid() along with the parameters. We can connect grid with the major as well as minor tick</p>
+
+                      <img src="/assets/img/Matplotlib/13.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/graphtanh.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Setting title to the axes and to the figure to tell about the figure</p>
+
+                      <img src="/assets/img/Matplotlib/14.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">Text(0.5, 0.98, 'tanh & sin function') </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/tanhsinhfun.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Creating very complex layout with GridSpec Although we can create layout with subplots(), gridspec() makes the layout more customizable We have to crete axes manually in this</p>
+
+                      <img src="/assets/img/Matplotlib/15.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">Text(0.5, 0.5, 'forth plot') </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/plot.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Creating subplots span rows and columns here gs[:,1] means column 1 contains only one image</p>
+
+                      <img src="/assets/img/Matplotlib/16.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">Text(0.5, 0.5, 'third plot') </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/plot2.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Color definition in matplot is huge but mostly we use single character i.e 'b'</p>
+
+                      <img src="/assets/img/Matplotlib/17.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">[matplotlib.lines.Line2D at 0x16a81a65400]</p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/straignt.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Draw a Line plot</p>
+
+                      <img src="/assets/img/Matplotlib/18.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">[matplotlib.lines.Line2D at 0x16a81acebb0,
+                    <br>matplotlib.lines.Line2D at 0x16a81acecd]</p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/zigzag.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Draw a Scatter Plot</p>
+
+                      <img src="/assets/img/Matplotlib/19.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">[matplotlib.lines.Line2D at 0x16a81b49730]
+                   </p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/dotted.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Draw a bar plot</p>
+
+                      <img src="/assets/img/Matplotlib/20.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/bar.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Stacking bar</p>
+
+                      <img src="/assets/img/Matplotlib/21.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">BarContainer object of 8 artists</p>
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/colorbar.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Histogram plot---it helps to understand the distribution of the data</p>
+
+                      <img src="/assets/img/Matplotlib/22.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">(array([  9.,  58., 158., 310., 456., 492., 313., 154.,  38.,  12.]), <br>
+                        array([-3.19056388, -2.54724417, -1.90392445, -1.26060474, -0.61728502, <br>
+                                0.02603469,  0.66935441,  1.31267412,  1.95599383,  2.59931355,
+                                3.24263326]),<br>
+                                BarContainer object of 10 artists)</p>
+                        
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/artistbar.png" alt="" style="width: 95%;">
+
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Pie Chart</p>
+
+                      <img src="/assets/img/Matplotlib/23.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">([matplotlib.patches.Wedge at 0x16a8217b370, <br>
+                        matplotlib.patches.Wedge at 0x16a8217b8e0, <br>
+                        matplotlib.patches.Wedge at 0x16a8217bdc0, <br>
+                        matplotlib.patches.Wedge at 0x16a821892e0, <br>
+                        matplotlib.patches.Wedge at 0x16a821897c0, <br>
+                        matplotlib.patches.Wedge at 0x16a82189ca0], <br>
+                       [Text(0.21305286529944611, 1.0791702722868604, 'Sun'), <br>
+                        Text(-1.085858860920759, 0.17581391913006217, 'Moon'), <br>
+                        Text(-1.0651900959848022, -0.2745360803535448, 'Jupiter'), <br>
+                        Text(-0.924137095653324, -0.5966327416740043, 'Venus'), <br>
+                        Text(-0.42967523513105893, -1.0126100889854246, 'Mars'), <br>
+                        Text(0.7997903711551759, -0.7552055099159871, 'Mecury')])</p>
+                        
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/pie.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">BoxPlot: A standard way of displaying the dataset based on five summar min,max,median,first and third quartiles</p>
+
+                      <img src="/assets/img/Matplotlib/24.png" alt="" style="width: 95%;">
+                      
+                     
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">{'whiskers': [matplotlib.lines.Line2D at 0x16a821dc67,<br>
+                        matplotlib.lines.Line2D at 0x16a821dca00,<br>
+                        matplotlib.lines.Line2D at 0x16a821e7fa0,<br>
+                        matplotlib.lines.Line2D at 0x16a821f3370,<br>
+                        matplotlib.lines.Line2D at 0x16a82201910,<br>
+                        matplotlib.lines.Line2D at 0x16a82201ca0,<br>
+                        matplotlib.lines.Line2D at 0x16a82215280,<br>
+                        matplotlib.lines.Line2D at 0x16a82215610],<br>
+                       'caps': [matplotlib.lines.Line2D at 0x16a821dcd90,
+                        matplotlib.lines.Line2D at 0x16a821e7160,<br>
+                        matplotlib.lines.Line2D at 0x16a821f3700,<br>
+                        matplotlib.lines.Line2D at 0x16a821f3a90,<br>
+                        matplotlib.lines.Line2D at 0x16a8220c070,<br>
+                        matplotlib.lines.Line2D at 0x16a8220c400,<br>
+                        matplotlib.lines.Line2D at 0x16a822159a0,<br>
+                        matplotlib.lines.Line2D at 0x16a82215d30],<br>
+                       'boxes': [matplotlib.lines.Line2D at 0x16a821dc2e0> <br>
+                        matplotlib.lines.Line2D at 0x16a821e7c10,<br>
+                        matplotlib.lines.Line2D at 0x16a82201580,<br>
+                        matplotlib.lines.Line2D at 0x16a8220ceb0],<br>
+                       'medians': matplotlib.lines.Line2D at 0x16a821e74f0,<br>
+                        matplotlib.lines.Line2D at 0x16a821f3e20,<br>
+                        matplotlib.lines.Line2D at 0x16a8220c790,<br>
+                        matplotlib.lines.Line2D at 0x16a82223100],<br>
+                       'fliers': [matplotlib.lines.Line2D at 0x16a821e7880, <br>
+                        matplotlib.lines.Line2D at 0x16a822011f0,<br>
+                        matplotlib.lines.Line2D at 0x16a8220cb20,<br>
+                        matplotlib.lines.Line2D at 0x16a82223490],<br>
+                       'means': []}
+                        
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+
+                      <img src="/assets/img/Matplotlib/boxplot.png" alt="" style="width: 95%;">
+                      
+                      
+                      
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">HeatMap Plot: It will help in learning the relationships between the variables imshow() helps us to create image with heatmap effect</p>
+                      
+                      <img src="/assets/img/Matplotlib/25.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">matplotlib.colorbar.Colorbar at 0x16a8230a760</p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+                      <img src="/assets/img/Matplotlib/boxcolor.png" alt="" style="width: 95%;">
+
+
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 700;">Drawing 3D plot using surface plot meshgrid generate all x,y pair based on x y space Adding colormap based on z axis ---cmap is used in 3d drawing</p>
+                      
+                      <img src="/assets/img/Matplotlib/26.png" alt="" style="width: 95%;">
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">class 'matplotlib.axes._subplots.Axes3DSubplot'</p>
+                      <p class=" my-4 " style="font-size: 22px; font-weight: 400;">output of above code </p>
+                      <img src="/assets/img/Matplotlib/3d.png" alt="" style="width: 75%;">
+
+
+
+                      
+
+
+                    </figure>
+
+
+
+
+                    
+
+
+                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <p style="font-size: 22px; font-weight: bolder; text-align: center;">
+      For More Interesting and Knowlegeable Blog Kindly Visit <a href="blog.html" style="color: green;">Our Blog Section ! </a>
+    </p>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up" style="text-align: center;">Share Your Insights</h2>
+          <!-- <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bi bi-browser-edge"></i>
+              <h3>Our Website</h3>
+              <p>lorem.com</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-9 col-lg-12 mt-4">
+            <form  method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" id="name" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input  type="email"  class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button id="btn" type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+   
+  </main>
+  <form class="back"> 
+    <input type="button" value="Go back!" onclick="history.back()">
+   </form>
+  
+  
+  <!-- ==============footer================= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h3 class="footer-heading">About ThinkAi</h3>
+            <p>Machine learning , DeepLearning explained and Artifical Intelligence with clear, concise videos. Saves time for your next big interview .</p>
+            <p><a href="index.html" class="footer-link-more">Learn More</a></p>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Courses </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Blog </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact US </a></li>
+              
+
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading"> Categories</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Artifical intelligence</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Machine Learning</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Deep Learning</a></li>
+             
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Recent Blog</h3>
+
+            <ul class="footer-links footer-blog-entry list-unstyled">
+              <li>
+                <a href="Machine-Learning-Model.html" class="d-flex align-items-center">
+                  <img src="assets/img/electronics.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">MACHINE LEARNING MODEL</span><span class="mx-1">&bullet;</span><span>oct 21 '23</span></div>
+                    <span>Debugging Machine Learning Model/ Bias Variance Tradeoff
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/BigData-Machine-Learning.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Machine Learning</span><span class="mx-1">&bullet;</span><span>oct 18 '23</span></div>
+                    <span>Machine Learning is branch of Computer Science used to develop and create diffent methodology. </span>
+                  </div>
+                </a>
+              </li>
+
+              <li><a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/database image.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Database Design </span><span class="mx-1">&bullet;</span><span>aug 15 '23</span></div>
+                    <span>Database design can be done using MySQL , SQL , NoSQL , MongoDB.</span>
+                  </div>
+              </a>
+              </li>
+            </ul>
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              <span><img style="height: 30px; width: 30px;" src="assets/img/logos.png" alt="">
+                <span>©ThinkAi</span></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="website"><i class="bi bi-browser-edge"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- =============end of footer===================== -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+
+ 
+
+  <!-- for contact us   -->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- end of contact us form  -->
+
+
+
+
+</body>
+</html>

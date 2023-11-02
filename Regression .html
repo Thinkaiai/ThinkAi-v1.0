@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Machine-Learning-model</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/conversation.png" rel="icon">
+    <link href="assets/img/conversation.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+  
+   
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    
+
+  
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        
+        <img src="assets/img/logos.png" alt="">
+        <h1>ThinkAi</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a href="index.html">Courses</a></li> -->
+          <li class="dropdown"><a href="index.html"><span style="font-size: larger; font-weight: 700;">Courses</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <!-- <li><a href="search-result.html">Search Result</a></li> -->
+              <li><a href="#">Artifical Intellence</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Web Developer</a></li>
+              <li><a href="#">Full Stack developer</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" style="font-size: larger; font-weight: 700;">Blog</a></li>
+          
+          <li><a href="#contact" style="font-size: larger; font-weight: 700;">Contact</a></li>
+          
+        </ul>
+        
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main class="main" id="main">
+    <section class="single-post-content">
+        <div class="container">
+            <div class="row">
+              <div id="col" class="col-md-9 post-content" data-aos="fade-up"></div>
+
+                <!-- ========single post content============ -->
+                <div class="single-post" >
+                    <div class="post-meta"><span class="date">Machine Learning  </span><span class="mx-1">&bullet;</span><span>oct 23 '23</span> <span class="mx-1">&bullet;</span>SANJEEV KUMAR<span></span> </div>
+                    <h1 class="mb-5" style="text-align: center;">Logistic Regression </h1>
+
+                    <figure class="my-4">
+                      <img src="assets/img/regression/root.jpeg" alt="" class="img-fluid" style="height: 25rem; width: 95%;" >
+                     
+                  </figure>
+                    
+                    
+
+                      
+                            
+                        <h3 style="text-align: center; color: rgb(10, 2, 32);">Let's Start the Discussion </h3>
+
+                        <h4 class=" my-4 post-content">Understanding Logistic Regression through Linear Regression:</h4>
+                        <!-- <img src="/course/assets/img/machine learning model.jpg" alt="" class="img-fluid" style="height: 25rem; width: 100%; " > -->
+                    <p class=" my-4 post-content" style="font-size: 22px; font-weight: 400;"><span class="firstcharacter" >L</span>inear regression is very straight forward and logical to understand. As we tweak X, Y will come out. Can it be done to categorical responses (Classification)? <br>
+                        No, It can not be done. There are mainly two reasons a.) Regression method is not bounded in probability outcome i.e Y is not be (0,1) b.) Regression output is not designed to output multinomial value. <br>
+                        But, we can derive mathematically to achieve from linear regression to logistic regression to bound the outcome (0,1), probability to find the output.
+                        </p>
+
+                    <figure class="post-content my-4">
+                        
+                        <div>
+                          <p style="font-size: 22px; font-weight: 700;">In linear regression where feature variables can take any values, the output (label) can thus be continuous from negative to positive infinity.</p>
+                          <img src="/assets/img/regression/1.jpg" alt="" style="width: 95%;">
+                          <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                            Since logistic regression is about classification, i.e Y is a categorical variable. It’s clearly not possible to achieve such output with a linear regression model (Eq. 1.1) since the range on both sides does not match. Our aim is to transform the LHS in such a way that it matches the range of RHS, which is governed by the range of feature variables, [-∞, ∞]. <br>
+                            We will follow some intuitive steps to search for how it’s possible to achieve such an outcome. <br>
+                            
+                            <img src="/assets/img/regression/2.jpg" alt="" style="width: 95%;">
+                          <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                            For linear regression, both X and Y ranges from minus infinity to positive infinity. Y in logistic is categorical, or for the problem above it takes either of the two distinct values 0,1. First, we try to predict the probability using the regression model. Instead of two distinct values now the LHS can take any values from 0 to 1 but still the ranges differ from the RHS.
+                            
+                            <img src="/assets/img/regression/3.jpg" alt="" style="width: 95%;">
+
+                          </p>
+                          <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                            I discussed above those odds and odds ratio varies from [0, ∞]. This is better than probability (which is limited between 0 and 1) and one step closer to match the range of RHS. <br>
+
+                            Many of you have already understood that if we now consider a natural logarithm on LHS of (eq. 1.3) then the ranges on both sides match.
+
+
+                            
+                            <img src="/assets/img/regression/4.jpg" alt="" style="width: 95%;">
+                            </p>
+
+                          <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                            With this, we have achieved a regression model, where the output is the natural logarithm of the odds, also known as logit. The base of the logarithm is not important but taking the logarithm of odds is. <br>
+
+                            We can retrieve the probability of success from eq. 1.4 as below.
+
+
+                            
+                            <img src="/assets/img/regression/5.jpg" alt="" style="width: 95%;">
+
+                          </p>
+                          <p class=" my-4" style="font-size: 22px; font-weight: 700;" >
+                            Interpreting logistic Regression:
+                            </p>
+                          <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                            Log odds can be difficult to make sense in logistic regression. So, we try to interpret in Odds ratio only. As the ratio is nonlinear so it depends on the present value of x.
+
+                          </p>
+                          <p class=" my-4" style="font-size: 22px; font-weight: 700;" >
+                            How to estimate beta value:
+                            </p>
+
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                Beta value is estimated through maximum likelihood function. Maximum likelihood means maximizing the probability of different parameters. Suppose P1, P2 ,P3 are the probability of the parameters then maximizing all of them together is nothing but P1xP2xP3. Log function is added to stabilize the solution. Internal function of probability may be non linear so BFGS is used. <br>
+                                Another way to determine is through gradient descent. The cost function is the same maximum likelihood with some tweak(min of loglikelihood) to optimize the function to find the beta value through iterations.
+                            </p>
+
+                          <p class=" my-4" style="font-size: 22px; font-weight: 700;" >
+                           Model Evaluation:
+                            </p>
+
+                            <p class=" my-4" style="font-size: 22px; font-weight: 400;" >
+                                Accuracy of a model is a great metrics to evaluate a model. But, it will not show the full picture of the model validity. If the data is not balanced in class, then the model will show in proportional accuracy. <br>
+                                There is no information of the error quality to which we will decide the model. Some errors are too expensive that we want to reduce.  <br>
+                                Here, errors are defined two types 1.) False positive 2.) False Negative. <br>
+                                Data scientist decides which error type is to be reduced. Consider a pandemic model where false negative has to be reduced otherwise pandemic can not be reduced, but it should be reduced to such an extent that false positive is not too much. False positive would increase the cost of further confirmatory test. <br>
+                                Consider a spam filter detector model. Here, false positive is expensive as the spam is deleted including the ham, which is false positive . <br>
+                                Keeping view of the above discussion, data scientist balances the recall(rate of positivity) and precision(deals with how well the model works with false positive) , in both the metric only denominator part of false positive and false negative are changed. <br>
+
+                                <span style="font-weight: 700;">F-score--</span>To evaluate the model in correct way, we need a score to balance the false positive and false negative score therefore to find the method to balance the score of recall and precision. Mean is one of them but it will give the equal weightage which we do not like to do. Harmonic mean will come to the best way to come the value just more than the lowest value and way less than highest value. Beta value will balance the score of recall and precision. If beta is 0 then recall will come. <br>
+                                Now come to sensitivity and specificity: <br>
+                                First problem we have to fix was accuracy problem. We defined recall and precision as two end of the pole. Then We define, the ROC curve to have the sensitivity and specificity at the same plot. <br>
+
+
+                            </p>
+                           <p class=" my-4" style="font-size: 22px; font-weight: 700;" >
+                            Sensitivity = True Positive/(True Positive + False Negative) <br>
+                            Specificity = True Negative/(True Negative + False Positive) <br>
+                             
+                            </p>
+                            <p class=" my-4" style="font-size: 22px; font-weight: 700; color: #0E9FB6;" >Reference Book : An Introduction to Statistical Learning with Applications in Python</p>
+
+
+                        
+                          
+
+
+
+                    </figure>
+
+
+                   
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 22px; font-weight: bolder; margin-left: 20rem;">
+          For More Interesting and Knowlegeable Blog Kindly Visit <a href="blog.html" style="color: green;">Our Blog Section ! </a>
+        </p>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up" style="text-align: center;">Share Your Insights</h2>
+          <!-- <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bi bi-browser-edge"></i>
+              <h3>Our Website</h3>
+              <p>lorem.com</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-9 col-lg-12 mt-4">
+            <form  method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" id="name" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input  type="email"  class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button id="btn" type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+   
+  </main>
+  <form class="back"> 
+    <input type="button" value="Go back!" onclick="history.back()">
+   </form>
+  
+  
+  <!-- ==============footer================= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h3 class="footer-heading">About ThinkAi</h3>
+            <p>Machine learning , DeepLearning explained and Artifical Intelligence with clear, concise videos. Saves time for your next big interview .</p>
+            <p><a href="index.html" class="footer-link-more">Learn More</a></p>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Courses </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Blog </a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact US </a></li>
+              
+
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading"> Categories</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Artifical intelligence</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Machine Learning</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i>Deep Learning</a></li>
+             
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Recent Blog</h3>
+
+            <ul class="footer-links footer-blog-entry list-unstyled">
+              <li>
+                <a href="Machine-Learning-Model.html" class="d-flex align-items-center">
+                  <img src="assets/img/electronics.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">MACHINE LEARNING MODEL</span><span class="mx-1">&bullet;</span><span>oct 21 '23</span></div>
+                    <span>Debugging Machine Learning Model/ Bias Variance Tradeoff
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/BigData-Machine-Learning.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Machine Learning</span><span class="mx-1">&bullet;</span><span>oct 18 '23</span></div>
+                    <span>Machine Learning is branch of Computer Science used to develop and create diffent methodology. </span>
+                  </div>
+                </a>
+              </li>
+
+              <li><a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/database image.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Database Design </span><span class="mx-1">&bullet;</span><span>aug 15 '23</span></div>
+                    <span>Database design can be done using MySQL , SQL , NoSQL , MongoDB.</span>
+                  </div>
+              </a>
+              </li>
+            </ul>
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              <img style="height: 30px; width: 30px;" src="assets/img/logos.png" alt="">
+              <span>©ThinkAi</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="website"><i class="bi bi-browser-edge"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- =============end of footer===================== -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+
+ 
+
+  <!-- for contact us   -->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- end of contact us form  -->
+
+
+
+
+</body>
+</html>
