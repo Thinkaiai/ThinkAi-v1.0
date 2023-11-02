@@ -259,9 +259,9 @@ btn.addEventListener('click',function(e){
       document.body.classList.toggle("dark-theme");
 
       if(document.body.classList.contains("dark-theme")){
-        icon.src = "/assets/img/indeximg/sun.png";
+        icon.src = "assets/img/indeximg/sun.png";
       }else{
-        icon.src = "/assets/img/indeximg/moon.png";
+        icon.src = "assets/img/indeximg/moon.png";
       }
     }
 
